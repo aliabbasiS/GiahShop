@@ -3,6 +3,7 @@
 @tailwind utilities;
 body{
     min-width: 375px;
+    min-height: 100vh;
 }
 @media (min-width: 640px) {
 

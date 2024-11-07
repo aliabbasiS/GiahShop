@@ -1,9 +1,11 @@
-import Header from './Header'; // Ensure the import matches your component name
+import Header from './Header';
+import Mainsection from '../mainsection/mainsection';
 
 const MainPage = () => {
   return (
-    <div className='px-6 lg:px-24  whitespace-nowrap'>
+    <div className="px-6 h-full  lg:px-16 ">
       <Header />
+      <Mainsection /> 
     </div>
   );
 };

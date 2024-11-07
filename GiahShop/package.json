@@ -14,8 +14,11 @@
     "@emotion/styled": "^11.13.0",
     "@mui/joy": "5.0.0-beta.48",
     "@mui/material": "^6.1.6",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "i18next": "^23.16.4",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

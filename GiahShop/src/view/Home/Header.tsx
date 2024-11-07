@@ -5,15 +5,20 @@ import DrawerMobileNavigation from "./drawer";
 
 const Header = () => {
   return (
-    <header className="flex border-b  py-4 justify-between flex-row-reverse ">
-      <div className="flex flex-row-reverse gap-3 font-normal text-center">
+    <header className="flex border-b whitespace-nowrap  py-4 justify-between  ">
+      <div className="flex  gap-3 font-normal text-center">
+  
+
+
+
+
         <div className=" p-1 lg:hidden flex  items-center justify-center">
           <DrawerMobileNavigation />
         </div>
         <h2 className="font-bold text-neutral-2 flex items-center ">
           گیاه لند
         </h2>
-        <div className="lg:flex flex-row-reverse hidden   gap-3 ">
+        <div className="lg:flex  hidden   gap-3 ">
           <button>
             <h2 className="text-neutral-1 flex items-center">صحفه اصلی</h2>
           </button>
@@ -34,7 +39,7 @@ const Header = () => {
       <div className="flex gap-2 ">
         <button
           style={{ borderWidth: "1.3px" }}
-          className="border md:flex hidden flex-row-reverse border-spacing-2 p-2 border-primary-7 rounded-md"
+          className="border md:flex hidden  border-spacing-2 p-2 border-primary-7 rounded-md"
         >
           <img
             className="p-1 text-neutral-4 hidden lg:flex"
