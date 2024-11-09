@@ -24,3 +24,11 @@ body{
         opacity: 1;
       }
   }
+  .custom-dotted-outline {
+    outline: 10px dotted;
+    outline-offset: 2px; /* Adjust the spacing if needed */
+    border-radius: 4px; /* Optional: For rounded corners */
+    outline-style: dotted;
+    outline-width: 1px;
+    
+  }
