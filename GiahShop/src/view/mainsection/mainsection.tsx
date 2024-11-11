@@ -5,10 +5,10 @@ import validation from "../../../public/main/validation.png";
 import localshipping from "../../../public/main/local_shipping.png";
 import leaf1 from "../../../public/main/leaf1.png";
 import leaf2 from "../../../public/main/leaf2.png";
-import babaadam from "../../../public/shopescard/img1.png";
+
 
 import { useEffect, useState } from "react";
-import shopCardMaker from './shopcardmaker';
+
 import ShopCardMaker from "./shopcardmaker";
 
 const Mainsection = () => {
@@ -20,12 +20,12 @@ const Mainsection = () => {
   const targetNumber2 = 234;
   const targetNumber3 = 128;
 
-  const useDynamicCounter = (number: any, setNumber: any, targetNumber: any, slowThreshold: any) => {
+  const useDynamicCounter = (number: number, setNumber: Function, targetNumber: number, slowThreshold: number) => {
     useEffect(() => {
       const interval = number >= slowThreshold ? 250 : 1;
       const timeoutId = setTimeout(() => {
         if (number < targetNumber) {
-          setNumber((prevNumber) => prevNumber + 1);
+          setNumber((prevNumber:any) => prevNumber + 1);
         }
       }, interval);
       return () => clearTimeout(timeoutId);
@@ -155,13 +155,14 @@ const Mainsection = () => {
         <img className="lg:w-1/2  w-11/12" src={leaf1} alt="" />
         <img className="lg:w-1/2 w-11/12" src={leaf2} alt="" />
       </div>
+      {/* title of shoppingcard */}
       <div className="flex gap-5 flex-col my-14">
         <h2 className="text-xl text-primary-7">گیاهان اپارتمانی</h2>
         <div className=" my-6 flex flex-row w-full flex-1 ">
           {/* shopingcard */}
          
           <ShopCardMaker/>
-            
+       
          
         </div>
       </div>
