@@ -5,11 +5,13 @@ import validation from "../../../public/main/validation.png";
 import localshipping from "../../../public/main/local_shipping.png";
 import leaf1 from "../../../public/main/leaf1.png";
 import leaf2 from "../../../public/main/leaf2.png";
+import bonsaye from "../../../public/main/bonsay.png"
 
 
 import { useEffect, useState } from "react";
 
 import ShopCardMaker from "./shopcardmaker";
+import plantshow from "./plantshow";
 
 const Mainsection = () => {
   const [number1, setNumber1] = useState(0);
@@ -165,7 +167,15 @@ const Mainsection = () => {
        
          
         </div>
-      </div>
+       
+        
+       
+        
+        
+        </div>
+  {plantshow(bonsaye,'گیاه بونسای ')}
+
+     
     </>
   );
 };
