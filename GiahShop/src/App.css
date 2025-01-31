@@ -1,9 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body{
-    min-width: 375px;
-    min-height: 100vh;
+    min-width: 500px;
+   
 }
 @media (min-width: 640px) {
 
@@ -13,3 +14,22 @@ body{
 @media (min-width: 1280px) {
 
 }
+.fadein { animation: fadeIn 1.8s; }
+@keyframes fadeIn {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+  }
+  .custom-dotted-outline {
+    outline: 10px dotted;
+    outline-offset: 2px; /* Adjust the spacing if needed */
+    border-radius: 4px; /* Optional: For rounded corners */
+    outline-style: dotted;
+    outline-width: 1px;
+    
+  }

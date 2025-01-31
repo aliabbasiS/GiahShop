@@ -1,14 +1,23 @@
 
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import './App.css'
-import MainPage from './view/Home/Main';
+
+import routes from './Router/route';
 
 function App() {
 
 
   return (
-    <div className='w-full  h-full'>
-     <MainPage/>
-    </div>
+    <BrowserRouter>
+        <Routes>
+          {routes.map((route) => (
+            <Route key={route.path} path={route.path} element={<route.element />} />
+          ))}
+          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="/" element={<Navigate to="/main" />} />
+        </Routes>
+      </BrowserRouter>
+    
   )
 }
 
