@@ -5,7 +5,7 @@ import DrawerMobileNavigation from "./drawer";
 
 const Header = () => {
   return (
-    <header className="flex border-b whitespace-nowrap  py-4 justify-between  ">
+    <header className="flex border-b whitespace-nowrap  py-4 px-10 justify-between  ">
       <div className="flex  gap-3 font-normal text-center">
   
 

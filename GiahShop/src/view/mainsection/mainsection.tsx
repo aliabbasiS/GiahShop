@@ -5,13 +5,16 @@ import validation from "../../../public/main/validation.png";
 import localshipping from "../../../public/main/local_shipping.png";
 import leaf1 from "../../../public/main/leaf1.png";
 import leaf2 from "../../../public/main/leaf2.png";
-import bonsaye from "../../../public/main/bonsay.png"
-
+import bonsaye from "../../../public/main/bonsay.png";
+import sensoriya from "../../../public/mainFlower/sensoriya.png"
+import pachira from "../../../public/shopescard/pachira.png"
+import petos from "../../../public/shopescard/petos.png"
 
 import { useEffect, useState } from "react";
 
 import ShopCardMaker from "./shopcardmaker";
 import plantshow from "./plantshow";
+import PlantShowCard from "./plantshow";
 
 const Mainsection = () => {
   const [number1, setNumber1] = useState(0);
@@ -27,7 +30,7 @@ const Mainsection = () => {
       const interval = number >= slowThreshold ? 250 : 1;
       const timeoutId = setTimeout(() => {
         if (number < targetNumber) {
-          setNumber((prevNumber:any) => prevNumber + 1);
+          setNumber((prevNumber: any) => prevNumber + 1);
         }
       }, interval);
       return () => clearTimeout(timeoutId);
@@ -162,20 +165,16 @@ const Mainsection = () => {
         <h2 className="text-xl text-primary-7">گیاهان اپارتمانی</h2>
         <div className=" my-6 flex flex-row w-full flex-1 ">
           {/* shopingcard */}
-         
-          <ShopCardMaker/>
-       
-         
-        </div>
-       
-        
-       
-        
-        
-        </div>
-  {plantshow(bonsaye,'گیاه بونسای ')}
 
-     
+          <ShopCardMaker />
+        </div>
+      </div>
+      <div className="flex gap-5">
+  <PlantShowCard imgurl={bonsaye} title="گیاه بونسای" key="bonsai-1" />
+  <PlantShowCard imgurl={sensoriya} title="گیاه سنسوریا" key="bonsai-2" />
+  <PlantShowCard imgurl={petos} title="گیاه پتوس" key="bonsai-3" />
+  <PlantShowCard imgurl={pachira} title="گیاه پاچیرا" key="bonsai-4" />
+</div>
     </>
   );
 };
